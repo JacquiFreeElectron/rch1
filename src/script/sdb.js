@@ -1,4 +1,4 @@
-{
+let standardLibrary = {
     "library": [
         {
             "id": 1,

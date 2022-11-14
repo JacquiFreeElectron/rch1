@@ -1,7 +1,7 @@
 window.onload = function () {
     "use strict";
 
-    nunjucks.configure('view', { autoescape: true }); \
+    nunjucks.configure('view', { autoescape: true });
 
     let isLogin = true;
 
@@ -11,8 +11,14 @@ window.onload = function () {
     });
 
     let login = nunjucks.render('login.njk');
-    let standardLibrary = $.getJSON("../sdb.json");
-    let sdb = nunjucks.render('sdbview.njk', standardLibrary)
+    //let standardLibrary = $.getJSON("sdb.json");
+    //console.log(standardLibrary.readyState);
+    //console.log(standardLibrary);
+    //alert(JSON.stringify($.getJSON("sdb.json")));
+    let sdb = nunjucks.render('sdbview.njk', standardLibrary);
+    let jssdb = nunjucks.render('jssdb.njk');
+
+
     $("#dybzk").click(function () {
         if (isLogin) {
             $("#bzk-content").html(sdb);
@@ -21,6 +27,7 @@ window.onload = function () {
     });
     $("#jsbzk").click(function () {
         if (isLogin) {
+            $("#bzk-content").html(jssdb);
 
         } else { $("#bzk-content").html(login); }
     });
