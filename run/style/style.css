@@ -12,43 +12,94 @@ ul {
 body {
     background-image: linear-gradient(135deg, #5efce8, #736efe);
     background-repeat: no-repeat;
+    margin: 0px;
+    font-family: 'Noto Sans SC', sans-serif;
+
+}
+
+main {
     margin: 5rem;
     margin-bottom: 1rem;
+    margin-top: 0%;
+
+}
+
+header h1 {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 700;
+    text-align: center;
+}
+
+header h2 {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 400;
+    text-align: right;
 }
 
 #intro {
-
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 300;
     background-color: rgba(255, 255, 255, 0.3);
-    border: 5px solid;
+    border-style: solid;
+    border-bottom: 10px solid rgba(255, 255, 255, 0.5);
+    border-top: 0px solid;
+    border-left: 10px solid rgba(255, 255, 255, 0.5);
+    border-right: 10px solid rgba(255, 255, 255, 0.5);
     border-radius: 1rem;
-    border-color: rgba(255, 255, 255, 0.5);
+
     padding-left: 1rem;
     padding-right: 1rem;
     text-align: center;
 
-
 }
+
 
 
 nav ul {
     display: flex;
     flex-basis: auto;
-    background-color: #cec6bb;
-    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.3);
+    justify-content: space-evenly;
+
 
 }
 
 nav ul li {
+    font-family: 'Noto Sans SC', sans-serif;
+    flex-basis: 25%;
     text-align: center;
     text-decoration: none;
     list-style: none;
     margin: 0rem 1rem 0rem 1rem;
     padding: 0rem 1rem 0rem 1rem;
+
+
+    line-height: 1.2rem;
+    color: #0000;
+    text-shadow:
+        0 0 #000,
+        0 1.3em #1095c1;
+    overflow: hidden;
+    transition: .3s;
+
+    background-image: linear-gradient(#0011ff64, #0011ff64);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: .3s;
+}
+
+nav ul li:hover {
+
+    text-shadow:
+        0 -1.2em #000,
+        0 0 #ffffff;
+    background-size: 100% 100%;
+
 }
 
 footer {
-    color: #cec6bb;
-    background-color: #4c3021;
+    color: #5efce8;
+    background-color: black;
     padding: 1rem 1rem 0.5rem 1rem;
 }
 
@@ -61,9 +112,9 @@ footer {
 
 
 #singleSdb ul {
-    border-style: groove;
-    border-color: #4c3021;
-    border-radius: 1rem;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3);
+
     margin-top: 1rem;
     margin-bottom: 1rem;
     flex-basis: 30%;
